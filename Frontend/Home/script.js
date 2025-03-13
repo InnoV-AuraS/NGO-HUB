@@ -1,3 +1,19 @@
+let lastScrollY = window.scrollY;
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > lastScrollY) {
+        // Scrolling down, hide navbar
+        navbar.classList.add("hidden");
+    } else {
+        // Scrolling up, show navbar
+        navbar.classList.remove("hidden");
+    }
+    lastScrollY = window.scrollY;
+});
+
+
+
 const hamburger = document.getElementById("hamburger");
 hamburger.addEventListener("click",()=>{
     const dashboard = document.getElementById("dashboard");
