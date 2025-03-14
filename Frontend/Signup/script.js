@@ -6,7 +6,7 @@ form.addEventListener('submit', (e) => {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
 
-    fetch('/signup_form_handler/', {
+    fetch('http://127.0.0.1:8000/signup_form_handler/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
