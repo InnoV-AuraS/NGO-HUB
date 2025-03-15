@@ -26,13 +26,9 @@ body{
 #dashboard{
     width:40%;
 }
-#pic{
-    width:100%;
+#info{
+    width: 100%;
 }
-
-#contacts{
-    width:50%;
-}
-#links{
-    width:50%;
+#pic img{
+    width: 100%;
 }

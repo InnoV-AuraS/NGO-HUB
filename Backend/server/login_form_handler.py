@@ -12,7 +12,7 @@ def login_form_handler(request):
         # Process the form data
         print(f"Name: {username}, Password: {password}")
 
-        return JsonResponse({'message': 'Form data received successfully'})
+        return JsonResponse({'message': 'success'})
     except json.JSONDecodeError:
         return JsonResponse({'error': 'Invalid JSON data'}, status=400)
     except Exception as e:
