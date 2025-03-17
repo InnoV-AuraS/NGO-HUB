@@ -8,10 +8,26 @@
 </head>
 <body>
     <header>
+        <contact class="contact">
+            <div class="social">
+                <ul>
+                    <li><img src="../assets/facebook.svg" alt=""></li>
+                    <li><img src="../assets/twitter.svg" alt=""></li>
+                    <li><img src="../assets/instagram.svg" alt=""></li>
+                    <li><img src="../assets/whatsapp.svg" alt=""></li>
+                    <li><img src="../assets/linked-in.svg" alt=""></li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <ul>
+                    <li>8910262508</li>
+                    <li>subhadeepm608@gmail.com</li>
+            </div>
+        </contact>
         <nav id="navbar">
             <div class="logo">
-                <div id="hamburger">☰</div>
-                <img src="../assets/logo.png" alt="">
+                <img class="hamburger" id="hamburger" src="../assets/hamburger.svg" alt="">
+                <img class="logos" src="../assets/logo.png" alt="">
             </div>
             <div>
                <ul>
@@ -25,18 +41,20 @@
         <div id="dashboard">
             <img src="../assets/profile_alt.png" alt="no profile image found">
             <div id="details">
-                <p id="name">You must be logged in to view this</p>
-                <p id="location">Not Found</p>
+                <p id="name">Please log in to view this</p>
+                <p id="location">Location - Not Found</p>
             </div>
-            <h3>Menu</h3>
-            <ul>
-                <a href="#giveaway">giveaway</a><br/>
+            <hr>
+            <h3>MENU</h3>
+            <ul class="dash">
+                <a href="#giveaway">Giveaway</a><br/>
                 <a href="#donate">Donate</a><br/>
                 <a href="#fund">Fund</a><br/>
                 <a href="#join">Join</a>
             </ul>
-            <h3>Others</h3>
-            <ul>
+            <hr>
+            <h3>OTHERS</h3>
+            <ul class="dash">
                 <a href="#base">Contacts</a><br/>
                 <a href="../Profile/profile.html">Profile</a><br/>
                 <a href="#overview">Info</a>
@@ -52,66 +70,127 @@
     </header>
     <main>
         <div id="home_image">
-            <img src="../assets/home_image.jpg" alt="image not found"/>
+            <img src="../assets/home.jpg" alt="image not found"/>
         </div>
         <div id="overview">
+            <div class="one">
             <h2>Overview</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sapiente temporibus ea rerum officiis. Nisi, at? Delectus, repellat incidunt tempore nihil architecto qui, aspernatur quas tenetur atque soluta repudiandae sapiente!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sapiente temporibus ea rerum officiis. </p></div>
+            <div class="two">
+            <p>
+            Nisi, at? Delectus, repellat incidunt tempore nihil architecto qui, aspernatur quas tenetur atque soluta repudiandae sapiente!</p>'
+            </div>
         </div>
+
         <div class="services" id="giveaway">
             <div class="pic">
                 <img src="../assets/giveaway.png" alt="image not found">
             </div>
-            <div class="info">
-                <h2>Food Giveaway</h2>
+            <div class="info info-giveaway">
+                <center><h2>Food Giveaway</h2></center>
                 <p>you can ask any local ngo to help with donating the excess food left after social gatherings like marriage, parties, etc.</p>
-                <a href="../Giveaway/giveaway.html">Checkout</a>
+                <a href="../Giveaway/giveaway.html">CHECKOUT</a>
             </div>
         </div>
+
         <div class="services" id="donate">
-            <div class="info">
+            <div class="info info-donation">
                 <h2>Donation</h2>
                 <p>you can ask local ngo to help with donating food, clothes, books, etc to poop children or people.</p>
-                <a href="../Donate/donate.html">Checkout</a>
+                <a href="../Donate/donate.html">CHECKOUT</a>
             </div>
             <div class="pic">
                 <img src="../assets/donate.png" alt="image not found">
             </div>
         </div>
+
         <div class="services" id="fund">
             <div class="pic">
                 <img src="../assets/fund.png" alt="image not found">
             </div>
-            <div class="info">
+            <div class="info info-funding">
                 <h2>Funding</h2>
                 <p>your small help can be put a huge impact on how many people get benefits from ngo</p>
-                <a href="../Fund/fund.html">Checkout</a>
+                <a href="../Fund/fund.html">CHECKOUT</a>
             </div>
         </div>
         <div class="services" id="join">
-            <div class="info">
+            <div class="info info-join">
                 <h2>Join</h2>
                 <p>you can ask to join any ngo of your choice and help others directly through hardwork and charity.</p>
-                <a href="../Join/join.html">Checkout</a>
+                <a href="../Join/join.html">CHECKOUT</a>
             </div>
             <div class="pic">
                 <img src="../assets/join.png" alt="image not found">
             </div>
         </div>
     </main>
-    <footer>
-        <div id="base">
-            <div>
-                <h2>Contact Us</h2>
-                <p>Phone 8250750402</p>
-                <p>Email snehasis779@gmail.com</p>
-                <p>Address Malda,West Bengal</p>
+  
+    <footer id="footer">
+        <div class="footer-container">
+            <!-- Column 1: Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
             </div>
-            <div>
-                <img src="../assets/profile_alt.png" />
+    
+            <!-- Column 2: Reach (Contact Info) -->
+            <div class="footer-section">
+                <h3>Reach</h3>
+                <p><i class="fas fa-phone"></i> 8250750402</p>
+                <p><i class="fas fa-envelope"></i> snehasis779@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Malda, West Bengal</p>
+            </div>
+    
+            <!-- Column 3: Resources -->
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Column 4: Follow Us & Logo -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.linked-in.com" target="_blank">Linked In</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Company Logo -->
+            <div class="footer-logo">
+                <img src="../assets/logo.png" alt="Company Logo">
             </div>
         </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>© 2025 Rise Together. All rights reserved.</p>
+        </div>
     </footer>
+       
+    
     <script src="./script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+

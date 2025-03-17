@@ -1,27 +1,33 @@
 let lastScrollY = window.scrollY;
 const navbar = document.getElementById("navbar");
+const dashboard = document.getElementById("dashboard");
+const hamburger = document.getElementById("hamburger");
+let dashboardVisible = false; // Track dashboard state
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > lastScrollY) {
-        // Scrolling down, hide navbar
-        navbar.classList.add("hidden");
+        // Scrolling down, hide navbar & dashboard
+        navbar.classList.add("hidden-navbar");
+        if (dashboardVisible) {
+            dashboard.classList.remove("active"); // Move left
+        }
     } else {
-        // Scrolling up, show navbar
-        navbar.classList.remove("hidden");
+        // Scrolling up, show navbar & dashboard (if open)
+        navbar.classList.remove("hidden-navbar");
+        if (dashboardVisible) {
+            dashboard.classList.add("active");
+        }
     }
     lastScrollY = window.scrollY;
 });
 
+hamburger.addEventListener("click", () => {
+    dashboardVisible = !dashboardVisible;
 
-
-const hamburger = document.getElementById("hamburger");
-hamburger.addEventListener("click",()=>{
-    const dashboard = document.getElementById("dashboard");
-    if(dashboard.style.display == "none"){
-        dashboard.style.display = "block";
-    }
-    else{
-        dashboard.style.display = "none";
+    if (dashboardVisible) {
+        dashboard.classList.add("active");  // Slide in
+    } else {
+        dashboard.classList.remove("active"); // Slide out
     }
 });
 
