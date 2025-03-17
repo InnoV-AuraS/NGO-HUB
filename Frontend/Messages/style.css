@@ -1,11 +1,8 @@
-*{
-    box-sizing: border-box;
-}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     height: 100vh;
-    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    background: linear-gradient(to right, #0b0202, #090301);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,13 +12,13 @@ body {
     height: 100vh;
     border: none;
     border-radius: 0;
-    background: #fff;
+    background: rgb(137, 152, 226);
     box-shadow: none;
     display: flex;
     flex-direction: column;
 }
 .chat-header {
-    background: #ff6b6b;
+    background: #000000;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -43,32 +40,32 @@ body {
     word-wrap: break-word;
 }
 .client-message {
-    background: #007bff;
+    background: #24873e;
     color: white;
     align-self: flex-end;
 }
 .ngo-message {
-    background: #ffcc00;
-    color: black;
+    background: #38302d;
+    color: white;
     align-self: flex-start;
 }
 .chat-input {
     display: flex;
-    border-top: 2px solid #ff6b6b;
+    border-top: 2px solid #156d2c;
     background: #fff;
     padding: 10px;
 }
 .chat-input input {
     flex: 1;
     padding: 15px;
-    border: 2px solid #ff6b6b;
+    border: 2px solid #156d2c;
     outline: none;
     font-size: 1em;
     border-radius: 20px;
 }
 .chat-input button {
     padding: 15px 20px;
-    background: #ff6b6b;
+    background: #0a6e1c;
     color: white;
     border: none;
     cursor: pointer;

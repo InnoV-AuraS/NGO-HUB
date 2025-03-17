@@ -38,4 +38,5 @@ if(sessionStorage.getItem('logged') === null){
 if(sessionStorage.getItem('picture_url') !== null){
     document.getElementById('dashboard').querySelector('img').src = sessionStorage.getItem('picture_url');
     document.getElementById('name').innerHTML = sessionStorage.getItem('name');
+    document.getElementById('location').innerHTML = sessionStorage.getItem('location');
 }

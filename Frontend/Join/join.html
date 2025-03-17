@@ -3,10 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO - Join Us</title>
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
 </head>
 <body>
+    <!-- Header Code -->
+    <header>
+        <div class="navbar">
+            <h1>NGO</h1>
+            <nav>
+                <ul>
+                    <li><a href="../Home/home.html">Home</a></li>
+                    <li><a href="../Donate/donate.html">Donate</a></li>
+                    <li><a href="../Fund/fund.html">Fund</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Join Section -->
+    <section class="join-section">
+        <div class="join-content">
+            <h2>Join Our NGO</h2>
+            <p>Become a part of our mission to help those in need. Join us today and make a difference!</p>
+            
+            <div class="join-form">
+                <h3>Join Our NGO-Group</h3>
+                <form id="joining-form" method="POST">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    
+                    <label for="ngo-group">Select NGO Group:</label>
+                    <select id="ngo-group" name="ngo-group" required>
+                        <option value="Bright Future Network">Bright Future Network</option>
+                        <option value="Hope Horizon Foundation">Hope Horizon Foundation</option>
+                        <option value="Helping Squad">Helping Squad</option>
+                        <option value="Shine Bright Foundation">Shine Bright Foundation</option>
+                        <option value="Seva Shakti Foundation">Seva Shakti Foundation</option>
+                        <option value="Together We Rise">Together We Rise</option>
+                        <option value="Udaan India">Udaan India</option>
+                    </select>
+
+                    <label for="reason">Reason for Joining:</label>
+                    <textarea id="reason" name="reason" rows="4" placeholder="Why do you want to join?" required></textarea>
+
+                    <button type="submit" class="join-button">Join Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Code -->
+    <footer>
+        <p>&copy; 2025 NGO for Good. All Rights Reserved.</p>
+    </footer>
     <script src="./script.js"></script>
 </body>
 </html>

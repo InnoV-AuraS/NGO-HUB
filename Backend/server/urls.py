@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views,login_form_handler,signup_form_handler,donation_form_handler,profile_data_handler,fund_form_handler
+from . import views,login_form_handler,signup_form_handler,donation_form_handler,profile_data_handler,fund_form_handler,join_form_handler,giveaway_form_handler
 
 urlpatterns = [
     #add url pattern here
@@ -9,4 +9,6 @@ urlpatterns = [
     path('donation_form_handler/',donation_form_handler.donation_form_handler,name='donation_form_handler'),
     path('fetch_data/',profile_data_handler.fetch_data,name='fetch_data'),
     path('fund_form_handler/',fund_form_handler.fund_form_handler,name='fund_form_handler'),
+    path('join_form_handler/',join_form_handler.join_form_handler,name='join_form_handler'),
+    path('fetch_contact/',giveaway_form_handler.fetch_contact,name='fetch_contact'),
 ]

@@ -3,10 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO</title>
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
 </head>
 <body>
+    <!-- header code -->
+    <header>
+        <div class="navbar">
+            <h1>NGO</h1>
+            <nav>
+                <ul>
+                    <li><a href="../Home/home.html">Home</a></li>
+                    <li><a href="../Join/join.html">Join</a></li>
+                    <li><a href="../Fund/fund.html">Fund</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="donate-section">
+        <div class="donate-content">
+            <h2>Your small treat can be someones's lifetime joy</h2>
+            <p>if you have surplus food left after a social gathering do not waste it. help us reach out to the people in need so that they do not go empty stomach another day. you can call anytime for giving food.</p>
+            <p>please select the ngo of your locality and contack with them with given numbers</p>
+            
+            <div class="donate-form">
+                <h3>Donate Now</h3>
+                <form id="giveaway-form">
+                    <label for="ngo-name">Name of NGO:</label>
+                    <select id="ngo-name" name="ngo-name" required>
+                        <option value="">Select NGO</option>
+                        <option value="Lion's Clubs">Lion's Clubs</option>
+                        <option value="Jagoron Welfare Society">Jagoron Welfare Society</option>
+                        <option value="Goonj">Goonj</option>
+                        <option value="Pratham">Pratham</option>
+                        <option value="HelpAge">HelpAge</option>
+                        <option value="Child Rights and You">Child Rights and You</option>
+                        <option value="Sightsavers">Sightsavers</option>
+                        <option value="Nanhi Kali">Nanhi Kali</option>
+                        <option value="Give India Foundation">Give India Foundation</option>
+                        <option value="Care India">Care India</option>
+                        <option value="Sammaan Foundation">Sammaan Foundation</option>
+                    </select>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <button type="submit" class="donate-button">Donate Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2025 NGO for Good. All Rights Reserved.</p>
+    </footer>
     <script src="./script.js"></script>
 </body>
 </html>
