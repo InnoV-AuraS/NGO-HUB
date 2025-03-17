@@ -3,10 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO - Funding</title>
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
 </head>
 <body>
+    <!-- Header Code -->
+    <header>
+        <div class="navbar">
+            <h1>NGO</h1>
+            <nav>
+                <ul>
+                    <li><a href="../Home/home.html">Home</a></li>
+                    <li><a href="../Join/join.html">Join</a></li>
+                    <li><a href="../Donate/donate.html">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Funding Section -->
+    <section class="funding-section">
+        <div class="funding-content">
+            <h2>Support Our Cause with Your Funds</h2>
+            <p>Your funding can help bring life-changing projects to those in need. Contribute now to make a lasting impact!</p>
+            
+            <div class="funding-form">
+                <h3>Fund NGO Groups</h3>
+                <form method="POST" id="fund-form">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    
+                    <label for="amount">Funding Amount:</label>
+                    <input type="number" id="amount" name="amount" placeholder="Enter funding amount" required>
+
+                    <label for="ngo">Select NGO:</label>
+                    <select id="ngo" name="ngo" required>
+                        <option value="Bright Future Network">Bright Future Network</option>
+                        <option value="Hope Horizon Foundation">Hope Horizon Foundation</option>
+                        <option value="Helping Squad">Helping Squad</option>
+                        <option value="Shine Bright Foundation">Shine Bright Foundation</option>
+                        <option value="Seva Shakti Foundation">Seva Shakti Foundation</option>
+                        <option value="Together We Rise">Together We Rise</option>
+                        <option value="Udaan India">Udaan India</option>
+                    </select>
+
+                    <!-- select ngo -->
+                    <label for="project">Project to Fund:</label>
+                    <select id="project" name="project" required>
+                        <option value="school">Education for Children</option>
+                        <option value="hospital">Healthcare for Rural Areas</option>
+                        <option value="feeding">Food for the Needy</option>
+                    </select>
+
+                    <label for="message">Message (Optional):</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Leave a message for the cause"></textarea>
+
+                    <button type="submit" class="funding-button">Fund Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Code -->
+    <footer>
+        <p>&copy; 2025 NGO for Good. All Rights Reserved.</p>
+    </footer>
     <script src="./script.js"></script>
 </body>
 </html>
