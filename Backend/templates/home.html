@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{%static 'css/style.css' %}">
     <title>Document</title>
 </head>
 <body>
@@ -11,11 +12,11 @@
         <contact class="contact">
             <div class="social">
                 <ul>
-                    <li><img src="../assets/facebook.svg" alt=""></li>
-                    <li><img src="../assets/twitter.svg" alt=""></li>
-                    <li><img src="../assets/instagram.svg" alt=""></li>
-                    <li><img src="../assets/whatsapp.svg" alt=""></li>
-                    <li><img src="../assets/linked-in.svg" alt=""></li>
+                    <li><img src="{%static 'assets/facebook.svg' %}" alt=""></li>
+                    <li><img src="{%static 'assets/twitter.svg' %}" alt=""></li>
+                    <li><img src="{%static 'assets/instagram.svg' %}" alt=""></li>
+                    <li><img src="{%static 'assets/whatsapp.svg' %}" alt=""></li>
+                    <li><img src="{%static 'assets/linked-in.svg' %}" alt=""></li>
                 </ul>
             </div>
             <div class="contacts">
@@ -26,20 +27,20 @@
         </contact>
         <nav id="navbar">
             <div class="logo">
-                <img class="hamburger" id="hamburger" src="../assets/hamburger.svg" alt="">
-                <img class="logos" src="../assets/logo.png" alt="">
+                <img class="hamburger" id="hamburger" src="{%static 'assets/hamburger.svg' %}" alt="">
+                <img class="logos" src="{%static 'assets/logo.png' %}" alt="">
             </div>
             <div class="navelem">
                <ul>
-                <a href="../Donate/donate.html"><li>DONATE</li></a>
-                <a href="../Messages/messages.html"><li>SUPPORT</li></a>
-                <a href="../Signup/client_signup.html"><li>SIGN UP</li></a>
+                <a href="{%static 'Donate/donate.html"><li>DONATE</li></a>
+                <a href="{%static 'Messages/messages.html"><li>SUPPORT</li></a>
+                <a href="{%static 'Signup/client_signup.html"><li>SIGN UP</li></a>
                 <a href="../Login/login.html"><li>LOG IN</li></a>
                </ul>
             </div>
         </nav>
         <div id="dashboard">
-            <img src="../assets/profile_alt.png" alt="no profile image found">
+            <img src="{% static 'assets/profile_alt.png' %}" alt="no profile image found">
             <div id="details">
                 <p id="name">Please log in to view this</p>
                 <p id="location">Location - Not Found</p>
@@ -70,7 +71,7 @@
     </header>
     <main>
         <div id="home_image">
-            <img src="../assets/home.jpg" alt="image not found"/>
+            <img src="{% static 'assets/home.jpg' %}" alt="image not found"/>
         </div>
         <div id="overview">
             <div class="one">
@@ -84,7 +85,7 @@
 
         <div class="services" id="giveaway">
             <div class="pic">
-                <img src="../assets/giveaway.png" alt="image not found">
+                <img src="{% static 'assets/giveaway.png' %}" alt="image not found">
             </div>
             <div class="info info-giveaway">
                 <center><h2>Food Giveaway</h2></center>
@@ -100,13 +101,13 @@
                 <a href="../Donate/donate.html">CHECKOUT</a>
             </div>
             <div class="pic">
-                <img src="../assets/donate.png" alt="image not found">
+                <img src="{% static 'assets/donate.png' %}" alt="image not found">
             </div>
         </div>
 
         <div class="services" id="fund">
             <div class="pic">
-                <img src="../assets/fund.png" alt="image not found">
+                <img src="{% static 'assets/fund.png' %}" alt="image not found">
             </div>
             <div class="info info-funding">
                 <h2>Funding</h2>
@@ -121,7 +122,7 @@
                 <a href="../Join/join.html">CHECKOUT</a>
             </div>
             <div class="pic">
-                <img src="../assets/join.png" alt="image not found">
+                <img src="{% static 'assets/join.png' %}" alt="image not found">
             </div>
         </div>
     </main>
@@ -172,7 +173,7 @@
             </div>
             <!-- Company Logo -->
             <div class="footer-logo">
-                <img src="../assets/logo.png" alt="Company Logo">
+                <img src="{% static 'assets/logo.png' %}" alt="Company Logo">
             </div>
         </div>
     
@@ -183,7 +184,7 @@
     </footer>
        
     
-    <script src="./script.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
 

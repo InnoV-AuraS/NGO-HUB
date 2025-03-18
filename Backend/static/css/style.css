@@ -116,6 +116,10 @@ nav img{
     filter: invert();
 }
 
+.navelem ul a{
+    text-decoration: none;
+}
+
 nav ul{
     display: flex;
     margin-right: 30px;
